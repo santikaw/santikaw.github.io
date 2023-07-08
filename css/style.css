@@ -1,0 +1,308 @@
+/* first css */
+
+/* detail project */
+body {
+    font-family: "Inconsolata", monospace;
+    color: #0d1e2d;
+}
+
+.gambar {
+    width: 20%;
+    height: 20%;
+}
+
+.descproject {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: rgb(248, 249, 250);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyek {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+/* utama */
+
+.epilog {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    background-color: #b0c9dc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduce-content {
+    border: 7px solid rgb(32, 32, 32);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 17%;
+    padding-bottom: 20%;
+    display: block;
+}
+
+.introduce {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(248, 249, 250);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutme {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 14%;
+    padding-bottom: 14%;
+    background-color: rgb(248, 249, 250);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutme-content {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.diri {
+    color: rgb(32, 32, 32);
+}
+
+.project {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(248, 249, 250);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* project css */
+
+.item {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.item .item-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.item .item-wrap:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.item .item-wrap img {
+    transition: 0.3s transform ease;
+    transform: scale(1);
+}
+
+.item .item-wrap>.work-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+}
+
+.item .item-wrap>.work-info h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.item .item-wrap>.work-info span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.item .item-wrap:hover {
+    text-decoration: none;
+}
+
+.item .item-wrap:hover img {
+    transform: scale(1.05);
+}
+
+.item .item-wrap:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item .item-wrap:hover .work-info {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.readmore {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.2s all ease;
+    font-weight: 700;
+}
+
+.readmore:active,
+.readmore:focus,
+.readmore:hover {
+    outline: none;
+}
+
+.readmore:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: rgb(248, 249, 250);
+    color: white;
+}
+
+.fa-twitter {
+    background: rgb(248, 249, 250);
+    color: white;
+}
+
+/* footer */
+
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
